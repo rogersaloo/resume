@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* JohnDoe Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
 :root {
   --blue: #79A9F5;
@@ -50,6 +38,10 @@
   box-sizing: border-box;
 }
 
+.personal-statement{
+  font-size: large;
+  color: white;
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -5130,10 +5122,12 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
 }
 
 .card-footer:last-child {
   border-radius: 0 0 calc(0 - 1px) calc(0 - 1px);
+  text-align: center;
 }
 
 .card-header-tabs {
@@ -11393,6 +11387,7 @@ pre .code {
 
 .social-icons .social-link {
   font-size: 18px;
+  padding-left: 1rem;
 }
 
 .social-icons .social-link:hover {
@@ -11513,7 +11508,7 @@ pre .code {
 .header {
   position: relative;
   height: 80vh;
-  min-height: 600px;
+  min-height: 200px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
   background-size: cover;
@@ -11545,7 +11540,8 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  /* font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300))); */
+  font-size: 5rem;
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
@@ -11555,8 +11551,10 @@ pre .code {
 .header .header-content .header-mono {
   letter-spacing: 5px;
   font-weight: 500;
-  font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  /* font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300))); */
+  font-size: 1.5rem;
   margin-bottom: 40px;
+  padding-top: 2rem;
 }
 
 @media (max-width: 767.98px) {
@@ -11689,4 +11687,16 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+#blog {
+  background-color: #000;
+}
+
+#resume {
+  background-color: #000;
+}
+
+.copyright{
+  text-align: center;
 }
